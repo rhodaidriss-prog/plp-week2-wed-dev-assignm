@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section with Logo -->
+  <header>
+    <img src="https://via.placeholder.com/50" alt="Budget Tracker Logo" width="50">
+    <h1>Personal Budget Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Collapsible Interactive Element -->
+    <section class="instructions-section">
+      <details>
+        <summary>How to use this tracker</summary>
+        <p>Use the form below to enter your daily expenses. Select a category, add the amount, and choose the date to keep track of your spending habits.</p>
+      </details>
+    </section>
+
+    <!-- Upgraded Add Expense Form -->
+    <section class="add-expense-section">
+      <h2>Add New Expense</h2>
+      <form id="expense-form">
+        <label for="expense-name">Expense Name:</label>
+        <input type="text" id="expense-name" name="expense-name" placeholder="e.g., Groceries">
+
+        <label for="expense-amount">Amount ($):</label>
+        <input type="number" id="expense-amount" name="expense-amount" placeholder="e.g., 50">
+
+        <label for="expense-category">Category:</label>
+        <select id="expense-category" name="expense-category">
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="rent">Rent</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="expense-date">Date:</label>
+        <input type="date" id="expense-date" name="expense-date">
+
+        <button type="button" id="add-btn">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Expense Table Section -->
+    <section class="expenses-section">
+      <h2>Expenses</h2>
+      <table class="expense-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grocery Shopping</td>
+            <td>$120.00</td>
+            <td>Food</td>
+            <td>2026-09-25</td>
+          </tr>
+          <tr>
+            <td>Bus Pass</td>
+            <td>$45.00</td>
+            <td>Transport</td>
+            <td>2026-09-26</td>
+          </tr>
+          <tr>
+            <td>Monthly Rent</td>
+            <td>$850.00</td>
+            <td>Rent</td>
+            <td>2026-09-01</td>
+          </tr>
+          <tr>
+            <td>Movie Night</td>
+            <td>$25.00</td>
+            <td>Entertainment</td>
+            <td>2026-09-27</td>
+          </tr>
+          <tr>
+            <td>Electricity Bill</td>
+            <td>$60.00</td>
+            <td>Other</td>
+            <td>2026-09-28</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section class="multimedia-section">
+      <h2>Budgeting Tips</h2>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/sVKQn2Iftkc" 
+        title="YouTube video player - Budgeting Tips" 
+        style="border:0;" 
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+</body>
+</html>
